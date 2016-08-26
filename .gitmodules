@@ -1,0 +1,6 @@
+[submodule "metapdlibs"]
+	path = metapdlibs
+	url = https://github.com/cpmpercussion/metapdlibs
+[submodule "rjlib"]
+	path = rjlib
+	url = https://github.com/rjdj/rjlib
