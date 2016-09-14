@@ -1,4 +1,4 @@
-#N canvas 1436 386 640 403 10;
+#N canvas 1507 275 640 403 10;
 #X declare -path control;
 #X declare -path fx;
 #X declare -path instrument;
