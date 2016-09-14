@@ -1,0 +1,114 @@
+#N canvas 1436 386 640 403 10;
+#X declare -path control;
+#X declare -path fx;
+#X declare -path instrument;
+#X declare -path scales;
+#X declare -path metapdlibs/control;
+#X declare -path metapdlibs/fx;
+#X declare -path metapdlibs/instrument;
+#X declare -path metapdlibs/scales;
+#X obj 17 7 inlet;
+#X obj 59 7 inlet;
+#X obj 102 6 inlet;
+#X obj 146 6 inlet;
+#X obj 226 9 inlet;
+#X obj 346 18 loadMetaPdLibs;
+#X floatatom 62 42 5 0 0 0 - - -, f 5;
+#X floatatom 24 41 5 0 0 0 - - -, f 5;
+#X floatatom 107 43 5 0 0 0 - - -, f 5;
+#X floatatom 147 42 5 0 0 0 - - -, f 5;
+#X obj 183 306 outlet~;
+#X obj 57 225 pack;
+#X obj 53 177 m_majorscale 48;
+#X obj 53 154 random 22;
+#X obj 244 227 pack;
+#X obj 181 177 m_majorscale 48;
+#X obj 181 154 random 22;
+#X obj 76 112 select 0;
+#X obj 84 276 s_spad pad1;
+#X obj 185 272 s_spad pad2;
+#X obj 74 132 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 52 202 makenote 100 400;
+#X obj 180 202 makenote 100 400;
+#X obj 77 90 % 37;
+#X msg 561 164 mod3d 0 \, mod3c 0 \, mod3b 0.520079 \, mod3a 0 \, mod2d
+0 \, mod2c 0 \, mod2b 0 \, mod2a 0 \, mod1d 0 \, mod1c 0.284409 \,
+mod1b 0.103622 \, mod1a 0.724882 \, osc3d 0 \, osc3c 0 \, osc3b 0 \,
+osc3a 0 \, osc2d 0 \, osc2c 0 \, osc2b 0 \, osc2a 1 \, osc1d 0.646142
+\, osc1c 0.974882 \, osc1b 0.244094 \, osc1a 0.228346 \, env3r 0 \,
+env3s 0 \, env3d 0 \, env3a 0 \, env2r 0.5 \, env2s 0.8 \, env2d 0.0708661
+\, env2a 0.00787402 \, env1r 0.6 \, env1s 0.6 \, env1d 0.25 \, env1a
+0.4 \,;
+#X obj 307 226 pack;
+#X obj 290 176 m_majorscale 48;
+#X obj 290 153 random 22;
+#X obj 289 201 makenote 100 400;
+#X obj 291 249 s_spad pad3;
+#X obj 186 110 select 0;
+#X obj 184 130 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 292 112 select 0;
+#X obj 290 132 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 187 88 % 43;
+#X obj 293 90 % 47;
+#X obj 563 140 loadbang;
+#X obj 419 224 pack;
+#X obj 402 174 m_majorscale 48;
+#X obj 402 151 random 22;
+#X obj 401 199 makenote 100 400;
+#X obj 404 110 select 0;
+#X obj 405 88 % 51;
+#X obj 405 131 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 403 247 s_spad pad4;
+#X connect 0 0 7 0;
+#X connect 1 0 6 0;
+#X connect 2 0 8 0;
+#X connect 3 0 9 0;
+#X connect 4 0 23 0;
+#X connect 4 0 34 0;
+#X connect 4 0 35 0;
+#X connect 4 0 42 0;
+#X connect 11 0 18 0;
+#X connect 12 0 21 0;
+#X connect 13 0 12 0;
+#X connect 14 0 19 0;
+#X connect 15 0 22 0;
+#X connect 16 0 15 0;
+#X connect 17 0 20 0;
+#X connect 18 0 10 0;
+#X connect 19 0 10 0;
+#X connect 20 0 13 0;
+#X connect 21 0 11 0;
+#X connect 21 1 11 1;
+#X connect 22 0 14 0;
+#X connect 22 1 14 1;
+#X connect 23 0 17 0;
+#X connect 24 0 18 1;
+#X connect 24 0 19 1;
+#X connect 24 0 29 1;
+#X connect 24 0 44 1;
+#X connect 25 0 29 0;
+#X connect 26 0 28 0;
+#X connect 27 0 26 0;
+#X connect 28 0 25 0;
+#X connect 28 1 25 1;
+#X connect 29 0 10 0;
+#X connect 30 0 31 0;
+#X connect 31 0 16 0;
+#X connect 32 0 33 0;
+#X connect 33 0 27 0;
+#X connect 34 0 30 0;
+#X connect 35 0 32 0;
+#X connect 36 0 24 0;
+#X connect 37 0 44 0;
+#X connect 38 0 40 0;
+#X connect 39 0 38 0;
+#X connect 40 0 37 0;
+#X connect 40 1 37 1;
+#X connect 41 0 43 0;
+#X connect 42 0 41 0;
+#X connect 43 0 39 0;
+#X connect 44 0 10 0;

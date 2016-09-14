@@ -1,4 +1,4 @@
-#N canvas 537 872 535 362 10;
+#N canvas 179 832 535 362 10;
 #X declare -path control;
 #X declare -path fx;
 #X declare -path instrument;
@@ -113,7 +113,7 @@
 #X restore 145 100 pd snare-noter;
 #X floatatom 62 42 5 0 0 0 - - -, f 5;
 #X floatatom 24 41 5 0 0 0 - - -, f 5;
-#N canvas 298 23 714 507 kick-noter 1;
+#N canvas 298 23 714 507 kick-noter 0;
 #X obj 80 29 inlet;
 #X obj 198 426 outlet;
 #X obj 262 29 inlet;
@@ -179,7 +179,7 @@
 #X restore 54 98 pd kick-noter;
 #X floatatom 107 43 5 0 0 0 - - -, f 5;
 #X floatatom 147 42 5 0 0 0 - - -, f 5;
-#N canvas 739 216 450 300 hat-noter 1;
+#N canvas 739 216 450 300 hat-noter 0;
 #X obj 39 14 inlet;
 #X obj 315 18 inlet;
 #X obj 47 267 outlet;
