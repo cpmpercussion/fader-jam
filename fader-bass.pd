@@ -1,4 +1,12 @@
-#N canvas 351 706 909 406 10;
+#N canvas 893 719 909 406 10;
+#X declare -path control;
+#X declare -path fx;
+#X declare -path instrument;
+#X declare -path scales;
+#X declare -path metapdlibs/control;
+#X declare -path metapdlibs/fx;
+#X declare -path metapdlibs/instrument;
+#X declare -path metapdlibs/scales;
 #X obj 17 7 inlet;
 #X obj 59 7 inlet;
 #X obj 102 6 inlet;
@@ -15,11 +23,15 @@
 #X obj 33 248 s_fmoscil basssynth;
 #X obj 28 178 makenote 100 20;
 #X obj 145 98 t b b b;
-#X msg 160 228 ratio 3 \, index 102 \, mR 292 \, mS 8 \, mD 20 \, mA
-0 \, R 118 \, S 50 \, D 55 \, A 2 \,;
 #X obj 157 150 m_majorscale 36;
 #X obj 157 127 random 8;
 #X obj 167 196 loadbang;
+#X floatatom 641 131 5 0 0 0 - - -, f 5;
+#X obj 641 150 list prepend index;
+#X floatatom 524 128 5 0 0 0 - - -, f 5;
+#X obj 524 147 list prepend ratio;
+#X msg 160 228 ratio 4 \, index 62 \, mR 292 \, mS 8 \, mD 20 \, mA
+0 \, R 120 \, S 50 \, D 55 \, A 7 \,;
 #X connect 0 0 7 0;
 #X connect 1 0 6 0;
 #X connect 2 0 8 0;
@@ -31,7 +43,11 @@
 #X connect 14 0 11 0;
 #X connect 14 1 11 1;
 #X connect 15 0 12 0;
-#X connect 15 0 18 0;
-#X connect 16 0 13 1;
-#X connect 18 0 17 0;
-#X connect 19 0 16 0;
+#X connect 15 0 17 0;
+#X connect 17 0 16 0;
+#X connect 18 0 23 0;
+#X connect 19 0 20 0;
+#X connect 20 0 13 1;
+#X connect 21 0 22 0;
+#X connect 22 0 13 1;
+#X connect 23 0 13 1;

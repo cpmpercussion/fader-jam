@@ -23,21 +23,29 @@
 #X obj 125 102 t b b b;
 #X obj 123 151 m_majorscale 48;
 #X obj 123 128 random 22;
-#X msg 227 208 ratio 5 \, index 150 \, mR 292 \, mS 8 \, mD 20 \, mA
-0 \, R 118 \, S 50 \, D 55 \, A 8 \,;
 #X obj 127 246 s_fmoscil leadsynth;
 #X obj 226 182 loadbang;
+#X floatatom 641 131 5 0 0 0 - - -, f 5;
+#X obj 641 150 list prepend index;
+#X floatatom 524 128 5 0 0 0 - - -, f 5;
+#X obj 524 147 list prepend ratio;
+#X msg 227 208 ratio 9 \, index 40 \, mR 292 \, mS 8 \, mD 20 \, mA
+0 \, R 118 \, S 50 \, D 55 \, A 15 \,;
 #X connect 0 0 7 0;
 #X connect 1 0 6 0;
 #X connect 2 0 8 0;
 #X connect 3 0 9 0;
 #X connect 4 0 13 0;
-#X connect 11 0 17 0;
+#X connect 11 0 16 0;
 #X connect 12 0 11 0;
 #X connect 12 1 11 1;
 #X connect 13 0 15 0;
 #X connect 14 0 12 0;
 #X connect 15 0 14 0;
-#X connect 16 0 17 1;
-#X connect 17 0 10 0;
-#X connect 18 0 16 0;
+#X connect 16 0 10 0;
+#X connect 17 0 22 0;
+#X connect 18 0 19 0;
+#X connect 19 0 16 1;
+#X connect 20 0 21 0;
+#X connect 21 0 16 1;
+#X connect 22 0 16 1;
