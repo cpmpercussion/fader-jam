@@ -26,7 +26,7 @@
 #X obj 812 289 % 2;
 #X obj 811 324 select 0;
 #X obj 66 268 spigot;
-#X obj 111 269 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 111 269 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0.503937
 1;
 #X obj 143 269 spigot;
 #X obj 188 270 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -35,7 +35,7 @@
 #X obj 266 269 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 309 268 spigot;
-#X obj 354 269 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 3.31773
+#X obj 354 269 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 383 266 spigot;
 #X obj 428 267 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
