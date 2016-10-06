@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		568B8C941DA648FB0011CD61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 568B8C931DA648FB0011CD61 /* main.m */; };
+		568B8C971DA648FB0011CD61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 568B8C961DA648FB0011CD61 /* AppDelegate.m */; };
+		568B8C9A1DA648FB0011CD61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568B8C991DA648FB0011CD61 /* ViewController.m */; };
+		568B8C9D1DA648FB0011CD61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 568B8C9B1DA648FB0011CD61 /* Main.storyboard */; };
+		568B8C9F1DA648FB0011CD61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 568B8C9E1DA648FB0011CD61 /* Assets.xcassets */; };
+		568B8CA21DA648FB0011CD61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 568B8CA01DA648FB0011CD61 /* LaunchScreen.storyboard */; };
+		568B8CAD1DA648FB0011CD61 /* faderjamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 568B8CAC1DA648FB0011CD61 /* faderjamTests.m */; };
+		568B8CB81DA648FB0011CD61 /* faderjamUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 568B8CB71DA648FB0011CD61 /* faderjamUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		568B8CA91DA648FB0011CD61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 568B8C871DA648FA0011CD61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 568B8C8E1DA648FA0011CD61;
+			remoteInfo = faderjam;
+		};
+		568B8CB41DA648FB0011CD61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 568B8C871DA648FA0011CD61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 568B8C8E1DA648FA0011CD61;
+			remoteInfo = faderjam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		568B8C8F1DA648FB0011CD61 /* faderjam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = faderjam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		568B8C931DA648FB0011CD61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		568B8C951DA648FB0011CD61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		568B8C961DA648FB0011CD61 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		568B8C981DA648FB0011CD61 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		568B8C991DA648FB0011CD61 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		568B8C9C1DA648FB0011CD61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		568B8C9E1DA648FB0011CD61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		568B8CA11DA648FB0011CD61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		568B8CA31DA648FB0011CD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		568B8CA81DA648FB0011CD61 /* faderjamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = faderjamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		568B8CAC1DA648FB0011CD61 /* faderjamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = faderjamTests.m; sourceTree = "<group>"; };
+		568B8CAE1DA648FB0011CD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		568B8CB31DA648FB0011CD61 /* faderjamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = faderjamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		568B8CB71DA648FB0011CD61 /* faderjamUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = faderjamUITests.m; sourceTree = "<group>"; };
+		568B8CB91DA648FB0011CD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		568B8C8C1DA648FA0011CD61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		568B8CA51DA648FB0011CD61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		568B8CB01DA648FB0011CD61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		568B8C861DA648FA0011CD61 = {
+			isa = PBXGroup;
+			children = (
+				568B8C911DA648FB0011CD61 /* faderjam */,
+				568B8CAB1DA648FB0011CD61 /* faderjamTests */,
+				568B8CB61DA648FB0011CD61 /* faderjamUITests */,
+				568B8C901DA648FB0011CD61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		568B8C901DA648FB0011CD61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				568B8C8F1DA648FB0011CD61 /* faderjam.app */,
+				568B8CA81DA648FB0011CD61 /* faderjamTests.xctest */,
+				568B8CB31DA648FB0011CD61 /* faderjamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		568B8C911DA648FB0011CD61 /* faderjam */ = {
+			isa = PBXGroup;
+			children = (
+				568B8C951DA648FB0011CD61 /* AppDelegate.h */,
+				568B8C961DA648FB0011CD61 /* AppDelegate.m */,
+				568B8C981DA648FB0011CD61 /* ViewController.h */,
+				568B8C991DA648FB0011CD61 /* ViewController.m */,
+				568B8C9B1DA648FB0011CD61 /* Main.storyboard */,
+				568B8C9E1DA648FB0011CD61 /* Assets.xcassets */,
+				568B8CA01DA648FB0011CD61 /* LaunchScreen.storyboard */,
+				568B8CA31DA648FB0011CD61 /* Info.plist */,
+				568B8C921DA648FB0011CD61 /* Supporting Files */,
+			);
+			path = faderjam;
+			sourceTree = "<group>";
+		};
+		568B8C921DA648FB0011CD61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				568B8C931DA648FB0011CD61 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		568B8CAB1DA648FB0011CD61 /* faderjamTests */ = {
+			isa = PBXGroup;
+			children = (
+				568B8CAC1DA648FB0011CD61 /* faderjamTests.m */,
+				568B8CAE1DA648FB0011CD61 /* Info.plist */,
+			);
+			path = faderjamTests;
+			sourceTree = "<group>";
+		};
+		568B8CB61DA648FB0011CD61 /* faderjamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				568B8CB71DA648FB0011CD61 /* faderjamUITests.m */,
+				568B8CB91DA648FB0011CD61 /* Info.plist */,
+			);
+			path = faderjamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		568B8C8E1DA648FA0011CD61 /* faderjam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 568B8CBC1DA648FB0011CD61 /* Build configuration list for PBXNativeTarget "faderjam" */;
+			buildPhases = (
+				568B8C8B1DA648FA0011CD61 /* Sources */,
+				568B8C8C1DA648FA0011CD61 /* Frameworks */,
+				568B8C8D1DA648FA0011CD61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = faderjam;
+			productName = faderjam;
+			productReference = 568B8C8F1DA648FB0011CD61 /* faderjam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		568B8CA71DA648FB0011CD61 /* faderjamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 568B8CBF1DA648FB0011CD61 /* Build configuration list for PBXNativeTarget "faderjamTests" */;
+			buildPhases = (
+				568B8CA41DA648FB0011CD61 /* Sources */,
+				568B8CA51DA648FB0011CD61 /* Frameworks */,
+				568B8CA61DA648FB0011CD61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				568B8CAA1DA648FB0011CD61 /* PBXTargetDependency */,
+			);
+			name = faderjamTests;
+			productName = faderjamTests;
+			productReference = 568B8CA81DA648FB0011CD61 /* faderjamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		568B8CB21DA648FB0011CD61 /* faderjamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 568B8CC21DA648FB0011CD61 /* Build configuration list for PBXNativeTarget "faderjamUITests" */;
+			buildPhases = (
+				568B8CAF1DA648FB0011CD61 /* Sources */,
+				568B8CB01DA648FB0011CD61 /* Frameworks */,
+				568B8CB11DA648FB0011CD61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				568B8CB51DA648FB0011CD61 /* PBXTargetDependency */,
+			);
+			name = faderjamUITests;
+			productName = faderjamUITests;
+			productReference = 568B8CB31DA648FB0011CD61 /* faderjamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		568B8C871DA648FA0011CD61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Charles Martin";
+				TargetAttributes = {
+					568B8C8E1DA648FA0011CD61 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = EDH387FRHA;
+						ProvisioningStyle = Automatic;
+					};
+					568B8CA71DA648FB0011CD61 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = EDH387FRHA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 568B8C8E1DA648FA0011CD61;
+					};
+					568B8CB21DA648FB0011CD61 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = EDH387FRHA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 568B8C8E1DA648FA0011CD61;
+					};
+				};
+			};
+			buildConfigurationList = 568B8C8A1DA648FA0011CD61 /* Build configuration list for PBXProject "faderjam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 568B8C861DA648FA0011CD61;
+			productRefGroup = 568B8C901DA648FB0011CD61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				568B8C8E1DA648FA0011CD61 /* faderjam */,
+				568B8CA71DA648FB0011CD61 /* faderjamTests */,
+				568B8CB21DA648FB0011CD61 /* faderjamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		568B8C8D1DA648FA0011CD61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				568B8CA21DA648FB0011CD61 /* LaunchScreen.storyboard in Resources */,
+				568B8C9F1DA648FB0011CD61 /* Assets.xcassets in Resources */,
+				568B8C9D1DA648FB0011CD61 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		568B8CA61DA648FB0011CD61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		568B8CB11DA648FB0011CD61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		568B8C8B1DA648FA0011CD61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				568B8C9A1DA648FB0011CD61 /* ViewController.m in Sources */,
+				568B8C971DA648FB0011CD61 /* AppDelegate.m in Sources */,
+				568B8C941DA648FB0011CD61 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		568B8CA41DA648FB0011CD61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				568B8CAD1DA648FB0011CD61 /* faderjamTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		568B8CAF1DA648FB0011CD61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				568B8CB81DA648FB0011CD61 /* faderjamUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		568B8CAA1DA648FB0011CD61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 568B8C8E1DA648FA0011CD61 /* faderjam */;
+			targetProxy = 568B8CA91DA648FB0011CD61 /* PBXContainerItemProxy */;
+		};
+		568B8CB51DA648FB0011CD61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 568B8C8E1DA648FA0011CD61 /* faderjam */;
+			targetProxy = 568B8CB41DA648FB0011CD61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		568B8C9B1DA648FB0011CD61 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				568B8C9C1DA648FB0011CD61 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		568B8CA01DA648FB0011CD61 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				568B8CA11DA648FB0011CD61 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		568B8CBA1DA648FB0011CD61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		568B8CBB1DA648FB0011CD61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		568B8CBD1DA648FB0011CD61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EDH387FRHA;
+				INFOPLIST_FILE = faderjam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.charlesmartin.faderjam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		568B8CBE1DA648FB0011CD61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EDH387FRHA;
+				INFOPLIST_FILE = faderjam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.charlesmartin.faderjam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		568B8CC01DA648FB0011CD61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EDH387FRHA;
+				INFOPLIST_FILE = faderjamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.charlesmartin.faderjamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/faderjam.app/faderjam";
+			};
+			name = Debug;
+		};
+		568B8CC11DA648FB0011CD61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EDH387FRHA;
+				INFOPLIST_FILE = faderjamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.charlesmartin.faderjamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/faderjam.app/faderjam";
+			};
+			name = Release;
+		};
+		568B8CC31DA648FB0011CD61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EDH387FRHA;
+				INFOPLIST_FILE = faderjamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.charlesmartin.faderjamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = faderjam;
+			};
+			name = Debug;
+		};
+		568B8CC41DA648FB0011CD61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EDH387FRHA;
+				INFOPLIST_FILE = faderjamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.charlesmartin.faderjamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = faderjam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		568B8C8A1DA648FA0011CD61 /* Build configuration list for PBXProject "faderjam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				568B8CBA1DA648FB0011CD61 /* Debug */,
+				568B8CBB1DA648FB0011CD61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		568B8CBC1DA648FB0011CD61 /* Build configuration list for PBXNativeTarget "faderjam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				568B8CBD1DA648FB0011CD61 /* Debug */,
+				568B8CBE1DA648FB0011CD61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		568B8CBF1DA648FB0011CD61 /* Build configuration list for PBXNativeTarget "faderjamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				568B8CC01DA648FB0011CD61 /* Debug */,
+				568B8CC11DA648FB0011CD61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		568B8CC21DA648FB0011CD61 /* Build configuration list for PBXNativeTarget "faderjamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				568B8CC31DA648FB0011CD61 /* Debug */,
+				568B8CC41DA648FB0011CD61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 568B8C871DA648FA0011CD61 /* Project object */;
+}
