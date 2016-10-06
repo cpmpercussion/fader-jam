@@ -4,3 +4,6 @@
 [submodule "rjlib"]
 	path = rjlib
 	url = https://github.com/rjdj/rjlib
+[submodule "synthcomponents/metapdlibs"]
+	path = synthcomponents/metapdlibs
+	url = https://github.com/cpmpercussion/metapdlibs
