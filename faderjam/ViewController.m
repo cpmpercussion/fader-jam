@@ -9,7 +9,7 @@
 #define SAMPLE_RATE 44100
 #define SOUND_OUTPUT_CHANNELS 2
 #define TICKS_PER_BUFFER 4
-#define PATCH_NAME @""
+#define PATCH_NAME @"fader-jam.pd"
 
 #import "ViewController.h"
 
