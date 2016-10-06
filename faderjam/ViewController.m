@@ -20,12 +20,21 @@
 @implementation ViewController
 
 - (void) startAudioEngine {
+    NSLog(@"VC: Starting Audio Engine");
+    self.audioController = [[PdAudioController alloc] init];
     [self.audioController configurePlaybackWithSampleRate:SAMPLE_RATE numberChannels:SOUND_OUTPUT_CHANNELS inputEnabled:NO mixingEnabled:YES];
     [self.audioController configureTicksPerBuffer:TICKS_PER_BUFFER];
-    [self openPdPatch];
+//    [self openPdPatch];
+    [PdBase openFile:PATCH_NAME path:[[NSBundle mainBundle] bundlePath]];
     [self.audioController setActive:YES];
     [self.audioController print];
-    NSLog(@"Ticks Per Buffer: %d",self.audioController.ticksPerBuffer);
+    NSLog(@"VC: Ticks Per Buffer: %d",self.audioController.ticksPerBuffer);
+    [PdBase setDelegate:self];
+}
+
+#pragma mark - Pd Send/Receive Methods
+-(void) receivePrint:(NSString *)message {
+    NSLog(@"Pd: %@",message);
 }
 
 - (void) shutdownSoundProcessing {
