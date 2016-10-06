@@ -1,5 +1,5 @@
 [submodule "metapdlibs"]
-	path = metapdlibs
+	path = synthcomponents/metapdlibs
 	url = https://github.com/cpmpercussion/metapdlibs
 [submodule "rjlib"]
 	path = rjlib
