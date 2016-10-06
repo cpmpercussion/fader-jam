@@ -14,7 +14,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) IBOutlet UILabel *activeInstrumentLabel;
 @end
 
 @implementation ViewController
@@ -25,16 +25,25 @@
     [self.audioController configurePlaybackWithSampleRate:SAMPLE_RATE numberChannels:SOUND_OUTPUT_CHANNELS inputEnabled:NO mixingEnabled:YES];
     [self.audioController configureTicksPerBuffer:TICKS_PER_BUFFER];
 //    [self openPdPatch];
+    [PdBase setDelegate:self];
+    [PdBase subscribe:@"toGUI"];
     [PdBase openFile:PATCH_NAME path:[[NSBundle mainBundle] bundlePath]];
     [self.audioController setActive:YES];
     [self.audioController print];
     NSLog(@"VC: Ticks Per Buffer: %d",self.audioController.ticksPerBuffer);
-    [PdBase setDelegate:self];
 }
 
 #pragma mark - Pd Send/Receive Methods
 -(void) receivePrint:(NSString *)message {
     NSLog(@"Pd: %@",message);
+}
+
+-(void) receiveList:(NSArray *)list fromSource:(NSString *)source {
+    if ([source isEqualToString:@"toGUI"]) {
+        if([(NSString *) list[0] isEqualToString:@"/currentlabel"]) {
+            [self.activeInstrumentLabel setText:(NSString *) list[1]];
+        }
+    }
 }
 
 - (void) shutdownSoundProcessing {
@@ -77,5 +86,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)volSliderChanged:(UISlider *)sender {
+    [PdBase sendList:@[@"/slider1",[NSNumber numberWithFloat:[sender value]]] toReceiver:@"fromGUI"];
+}
+- (IBAction)intSliderChanged:(UISlider *)sender {
+    [PdBase sendList:@[@"/slider2",[NSNumber numberWithFloat:[sender value]]] toReceiver:@"fromGUI"];
+}
+- (IBAction)hapSliderChanged:(UISlider *)sender {
+    [PdBase sendList:@[@"/slider3",[NSNumber numberWithFloat:[sender value]]] toReceiver:@"fromGUI"];
+}
+- (IBAction)jazSliderChanged:(UISlider *)sender {
+    [PdBase sendList:@[@"/slider4",[NSNumber numberWithFloat:[sender value]]] toReceiver:@"fromGUI"];
+}
+- (IBAction)changeButtonTap:(UIButton *)sender {
+    [PdBase sendList:@[@"/change",@1] toReceiver:@"fromGUI"];
+}
+- (IBAction)autoButtonTap:(UIButton *)sender {
+    [PdBase sendList:@[@"/auto",@1] toReceiver:@"fromGUI"];
+}
 
 @end

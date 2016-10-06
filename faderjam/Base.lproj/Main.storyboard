@@ -21,14 +21,23 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yno-cx-OZG">
                                 <frame key="frameInset" minX="14" minY="40.97%" height="31" maxX="14"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="volSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="2Nh-gp-8dM"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aAv-kS-o63">
                                 <frame key="frameInset" minX="14" minY="46.93%" height="31" maxX="14"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="intSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="5Yd-6K-j4J"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="eAl-c2-Dlh">
                                 <frame key="frameInset" minX="14" minY="52.89%" height="31" maxX="14"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="hapSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="igL-4p-bKO"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivM-Q7-BWi">
                                 <frame key="frameInset" minX="16" minY="28" height="43" maxX="16"/>
@@ -41,19 +50,31 @@
                                 <frame key="frameInset" minX="16" width="142" height="112" maxY="8"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="change"/>
+                                <connections>
+                                    <action selector="changeButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sb5-6U-Ai2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uft-WL-MYv">
                                 <frame key="frameInset" width="142" height="112" maxX="16" maxY="8"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="auto"/>
+                                <connections>
+                                    <action selector="autoButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ay-VV-9up"/>
+                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="clH-8f-e24">
                                 <frame key="frameInset" minX="14" minY="60.15%" height="31" maxX="14"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="jazSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="dgq-Fu-Uym"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="activeInstrumentLabel" destination="ivM-Q7-BWi" id="ZAt-QD-jKe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
