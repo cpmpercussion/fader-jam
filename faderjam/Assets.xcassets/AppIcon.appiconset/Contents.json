@@ -48,14 +48,14 @@
       "scale" : "3x"
     },
     {
-      "size" : "20x20",
       "idiom" : "ipad",
-      "filename" : "Icon40-2.png",
+      "size" : "20x20",
       "scale" : "1x"
     },
     {
-      "idiom" : "ipad",
       "size" : "20x20",
+      "idiom" : "ipad",
+      "filename" : "Icon40-3.png",
       "scale" : "2x"
     },
     {

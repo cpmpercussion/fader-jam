@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2A55510173BA5206B6BA88ED22781FF01E246D9B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E92D265595D6FCFF23F817AF6192A4864182339E" : 9223372036854775807,
+    "2A55510173BA5206B6BA88ED22781FF01E246D9B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "912BA145-6B0D-49BC-9061-A19659BE70D8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E92D265595D6FCFF23F817AF6192A4864182339E" : "fader-jam\/synthcomponents\/metapdlibs\/",
+    "2A55510173BA5206B6BA88ED22781FF01E246D9B" : "fader-jam\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "faderjam",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "faderjam.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cpmpercussion\/fader-jam.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2A55510173BA5206B6BA88ED22781FF01E246D9B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cpmpercussion\/metapdlibs",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E92D265595D6FCFF23F817AF6192A4864182339E"
+    }
+  ]
+}
