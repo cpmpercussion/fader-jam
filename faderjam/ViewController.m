@@ -15,6 +15,11 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *activeInstrumentLabel;
+@property (strong, nonatomic) IBOutletCollection(UIProgressView) NSArray *drumProgress;
+@property (strong, nonatomic) IBOutletCollection(UIProgressView) NSArray *bassProgress;
+@property (strong, nonatomic) IBOutletCollection(UIProgressView) NSArray *leadProgress;
+@property (strong, nonatomic) IBOutletCollection(UIProgressView) NSArray *padsProgress;
+@property (strong, nonatomic) IBOutletCollection(UISlider) NSArray *mainSliders;
 @end
 
 @implementation ViewController
@@ -27,6 +32,10 @@
 //    [self openPdPatch];
     [PdBase setDelegate:self];
     [PdBase subscribe:@"toGUI"];
+    [PdBase subscribe:@"c1"];
+    [PdBase subscribe:@"c5"];
+    [PdBase subscribe:@"c9"];
+    [PdBase subscribe:@"c13"];
     [PdBase openFile:PATCH_NAME path:[[NSBundle mainBundle] bundlePath]];
     [self.audioController setActive:YES];
     [self.audioController print];
@@ -43,6 +52,63 @@
         if([(NSString *) list[0] isEqualToString:@"/currentlabel"]) {
             [self.activeInstrumentLabel setText:(NSString *) list[1]];
         }
+    } else if ([source isEqualToString:@"c1"]) {
+        NSString *label = (NSString *) list[0];
+        NSNumber *value = (NSNumber *) list[1];
+        NSArray *progressViews = self.drumProgress;
+        if([label isEqualToString:@"/vol"]) {
+            [((UIProgressView *) progressViews[0]) setProgress:[value floatValue]/127.0];
+        } else if([label isEqualToString:@"/int"]) {
+            [((UIProgressView *) progressViews[1]) setProgress:[value floatValue]/127.0];
+        } else if([label isEqualToString:@"/hap"]) {
+            [((UIProgressView *) progressViews[2]) setProgress:[value floatValue]/127.0];
+        } else if([label isEqualToString:@"/jaz"]) {
+            [((UIProgressView *) progressViews[3]) setProgress:[value floatValue]/127.0];
+        }
+        
+    } else if ([source isEqualToString:@"c5"]) {
+        NSString *label = (NSString *) list[0];
+        NSNumber *value = (NSNumber *) list[1];
+        NSArray *progressViews = self.bassProgress;
+        if([label isEqualToString:@"/vol"]) {
+            [((UIProgressView *) progressViews[0]) setProgress:[value floatValue]/127.0];
+        } else if([label isEqualToString:@"/int"]) {
+            [((UIProgressView *) progressViews[1]) setProgress:[value floatValue]/127.0];
+        } else if([label isEqualToString:@"/hap"]) {
+            [((UIProgressView *) progressViews[2]) setProgress:[value floatValue]/127.0];
+        } else if([label isEqualToString:@"/jaz"]) {
+            [((UIProgressView *) progressViews[3]) setProgress:[value floatValue]/127.0];
+        }
+        
+    } else if ([source isEqualToString:@"c9"]) {
+        NSString *label = (NSString *) list[0];
+        NSNumber *value = (NSNumber *) list[1];
+        NSArray *progressViews = self.leadProgress;
+        if([label isEqualToString:@"/vol"]) {
+            [((UIProgressView *) progressViews[0]) setProgress:[value floatValue]/127.0];
+        } else if([label isEqualToString:@"/int"]) {
+            [((UIProgressView *) progressViews[1]) setProgress:[value floatValue]/127.0];
+        } else if([label isEqualToString:@"/hap"]) {
+            [((UIProgressView *) progressViews[2]) setProgress:[value floatValue]/127.0];
+        } else if([label isEqualToString:@"/jaz"]) {
+            [((UIProgressView *) progressViews[3]) setProgress:[value floatValue]/127.0];
+        }
+        
+    } else if ([source isEqualToString:@"c13"]) {
+        NSString *label = (NSString *) list[0];
+        NSNumber *value = (NSNumber *) list[1];
+        NSArray *progressViews = self.padsProgress;
+        if([label isEqualToString:@"/vol"]) {
+            [((UIProgressView *) progressViews[0]) setProgress:[value floatValue]/127.0];
+        } else if([label isEqualToString:@"/int"]) {
+            [((UIProgressView *) progressViews[1]) setProgress:[value floatValue]/127.0];
+        } else if([label isEqualToString:@"/hap"]) {
+            [((UIProgressView *) progressViews[2]) setProgress:[value floatValue]/127.0];
+        } else if([label isEqualToString:@"/jaz"]) {
+            [((UIProgressView *) progressViews[3]) setProgress:[value floatValue]/127.0];
+        }
+
+        
     }
 }
 
@@ -100,9 +166,19 @@
 }
 - (IBAction)changeButtonTap:(UIButton *)sender {
     [PdBase sendList:@[@"/change",@1] toReceiver:@"fromGUI"];
+    [PdBase sendList:@[@"/slider1",[NSNumber numberWithFloat:[(UISlider *) self.mainSliders[0] value]]] toReceiver:@"fromGUI"];
+    [PdBase sendList:@[@"/slider2",[NSNumber numberWithFloat:[(UISlider *) self.mainSliders[1] value]]] toReceiver:@"fromGUI"];
+    [PdBase sendList:@[@"/slider3",[NSNumber numberWithFloat:[(UISlider *) self.mainSliders[2]  value]]] toReceiver:@"fromGUI"];
+    [PdBase sendList:@[@"/slider4",[NSNumber numberWithFloat:[(UISlider *) self.mainSliders[3]  value]]] toReceiver:@"fromGUI"];
+    for (UISlider * slider in self.mainSliders) {
+        [slider setEnabled:YES];
+    }
 }
 - (IBAction)autoButtonTap:(UIButton *)sender {
     [PdBase sendList:@[@"/auto",@1] toReceiver:@"fromGUI"];
+    for (UISlider * slider in self.mainSliders) {
+        [slider setEnabled:NO];
+    }
 }
 
 @end
