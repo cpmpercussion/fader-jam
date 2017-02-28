@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '986AD6938C14D059D18ABD02E1B8BDB7'
-               BlueprintName = 'Pods-faderjam'
+               BlueprintIdentifier = '98939AA328733746627597629A82C3AB'
+               BlueprintName = 'Pods-faderjamUITests'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-faderjam.a'>
+               BuildableName = 'libPods-faderjamUITests.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

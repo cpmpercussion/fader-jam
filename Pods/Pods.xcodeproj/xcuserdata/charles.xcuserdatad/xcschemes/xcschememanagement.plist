@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-faderjamTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-faderjamUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>libpd.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>25E3A570965FD644361ABC26E4CCF29B</key>
+		<key>7795637428CCD65BC220D0E6EECEF5B3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A37F68403A9F9F87987B6275EC9D255F</key>
+		<key>986AD6938C14D059D18ABD02E1B8BDB7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>98939AA328733746627597629A82C3AB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AADBF5E1D90CC0EA1D66D9D7271C95DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

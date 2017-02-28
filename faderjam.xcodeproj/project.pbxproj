@@ -421,7 +421,9 @@
 		568B8CA21DA648FB0011CD61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 568B8CA01DA648FB0011CD61 /* LaunchScreen.storyboard */; };
 		568B8CAD1DA648FB0011CD61 /* faderjamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 568B8CAC1DA648FB0011CD61 /* faderjamTests.m */; };
 		568B8CB81DA648FB0011CD61 /* faderjamUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 568B8CB71DA648FB0011CD61 /* faderjamUITests.m */; };
-		9AA98E79974F48C55481DE2A /* libPods-faderjam.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E09CAD48DA61C0FBAA81CA4A /* libPods-faderjam.a */; };
+		5CBB2A55D79F5EAADB25D14B /* libPods-faderjamUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0DE59F85B2670E2B0161319 /* libPods-faderjamUITests.a */; };
+		9B9C1C285629A942A10C0E51 /* libPods-faderjam.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB010FCD7863E89B4361748 /* libPods-faderjam.a */; };
+		A4DDB3DF712C5B04A3505DA7 /* libPods-faderjamTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0100639E8B10F9191C428E4 /* libPods-faderjamTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -442,7 +444,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2E9FA081E437E2FAD071A620 /* Pods-faderjam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faderjam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-faderjam/Pods-faderjam.debug.xcconfig"; sourceTree = "<group>"; };
+		1AB010FCD7863E89B4361748 /* libPods-faderjam.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-faderjam.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4550F26EB176DA550B8DCD8A /* Pods-faderjam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faderjam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-faderjam/Pods-faderjam.debug.xcconfig"; sourceTree = "<group>"; };
+		491DBCED517146361E222D51 /* Pods-faderjamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faderjamUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-faderjamUITests/Pods-faderjamUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		560B50681DA66EDD0081509F /* auto-fader-4.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "auto-fader-4.pd"; sourceTree = "<group>"; };
 		560B50691DA66EDD0081509F /* auto-fader.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "auto-fader.pd"; sourceTree = "<group>"; };
 		560B506A1DA66EDD0081509F /* counter.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = counter.pd; sourceTree = "<group>"; };
@@ -865,8 +869,12 @@
 		568B8CB31DA648FB0011CD61 /* faderjamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = faderjamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		568B8CB71DA648FB0011CD61 /* faderjamUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = faderjamUITests.m; sourceTree = "<group>"; };
 		568B8CB91DA648FB0011CD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B67CA6131EDF89A21608ED46 /* Pods-faderjam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faderjam.release.xcconfig"; path = "Pods/Target Support Files/Pods-faderjam/Pods-faderjam.release.xcconfig"; sourceTree = "<group>"; };
-		E09CAD48DA61C0FBAA81CA4A /* libPods-faderjam.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-faderjam.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B4E8144940F143677698487 /* Pods-faderjamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faderjamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-faderjamTests/Pods-faderjamTests.debug.xcconfig"; sourceTree = "<group>"; };
+		770E8FD3AA668C0AB530CBD3 /* Pods-faderjam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faderjam.release.xcconfig"; path = "Pods/Target Support Files/Pods-faderjam/Pods-faderjam.release.xcconfig"; sourceTree = "<group>"; };
+		B0100639E8B10F9191C428E4 /* libPods-faderjamTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-faderjamTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7486D500E9CB10B0F8CA8A9 /* Pods-faderjamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faderjamTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-faderjamTests/Pods-faderjamTests.release.xcconfig"; sourceTree = "<group>"; };
+		C0DE59F85B2670E2B0161319 /* libPods-faderjamUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-faderjamUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C53F3EFB57FDF49085FA41A4 /* Pods-faderjamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faderjamUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-faderjamUITests/Pods-faderjamUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -874,7 +882,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AA98E79974F48C55481DE2A /* libPods-faderjam.a in Frameworks */,
+				9B9C1C285629A942A10C0E51 /* libPods-faderjam.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -882,6 +890,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4DDB3DF712C5B04A3505DA7 /* libPods-faderjamTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -889,19 +898,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CBB2A55D79F5EAADB25D14B /* libPods-faderjamUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E36D5F94070166337293E61 /* Pods */ = {
+		3DBB5D700B0133C4DCAC069D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2E9FA081E437E2FAD071A620 /* Pods-faderjam.debug.xcconfig */,
-				B67CA6131EDF89A21608ED46 /* Pods-faderjam.release.xcconfig */,
+				4550F26EB176DA550B8DCD8A /* Pods-faderjam.debug.xcconfig */,
+				770E8FD3AA668C0AB530CBD3 /* Pods-faderjam.release.xcconfig */,
+				6B4E8144940F143677698487 /* Pods-faderjamTests.debug.xcconfig */,
+				B7486D500E9CB10B0F8CA8A9 /* Pods-faderjamTests.release.xcconfig */,
+				491DBCED517146361E222D51 /* Pods-faderjamUITests.debug.xcconfig */,
+				C53F3EFB57FDF49085FA41A4 /* Pods-faderjamUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		45DBEC5F92D76649095929ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AB010FCD7863E89B4361748 /* libPods-faderjam.a */,
+				B0100639E8B10F9191C428E4 /* libPods-faderjamTests.a */,
+				C0DE59F85B2670E2B0161319 /* libPods-faderjamUITests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		560B50671DA66EDD0081509F /* synthcomponents */ = {
@@ -1380,8 +1404,8 @@
 				568B8CAB1DA648FB0011CD61 /* faderjamTests */,
 				568B8CB61DA648FB0011CD61 /* faderjamUITests */,
 				568B8C901DA648FB0011CD61 /* Products */,
-				0E36D5F94070166337293E61 /* Pods */,
-				9E1108444A3101340492F85A /* Frameworks */,
+				3DBB5D700B0133C4DCAC069D /* Pods */,
+				45DBEC5F92D76649095929ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1438,14 +1462,6 @@
 			path = faderjamUITests;
 			sourceTree = "<group>";
 		};
-		9E1108444A3101340492F85A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E09CAD48DA61C0FBAA81CA4A /* libPods-faderjam.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1453,12 +1469,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 568B8CBC1DA648FB0011CD61 /* Build configuration list for PBXNativeTarget "faderjam" */;
 			buildPhases = (
-				3B954AAEB69E68A5A8DA1DEA /* Check Pods Manifest.lock */,
+				A62016FD7EAA21B3FD2F4B65 /* [CP] Check Pods Manifest.lock */,
 				568B8C8B1DA648FA0011CD61 /* Sources */,
 				568B8C8C1DA648FA0011CD61 /* Frameworks */,
 				568B8C8D1DA648FA0011CD61 /* Resources */,
-				BB7876467EA792178050D0DE /* Embed Pods Frameworks */,
-				35F6D8748100BB06583B6CEC /* Copy Pods Resources */,
+				1B32E59BC02F5C7BDE93D447 /* [CP] Embed Pods Frameworks */,
+				B3C482F0E1C864CCFE837B23 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1473,9 +1489,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 568B8CBF1DA648FB0011CD61 /* Build configuration list for PBXNativeTarget "faderjamTests" */;
 			buildPhases = (
+				B5DD9314FEFBB92FE7D7B11D /* [CP] Check Pods Manifest.lock */,
 				568B8CA41DA648FB0011CD61 /* Sources */,
 				568B8CA51DA648FB0011CD61 /* Frameworks */,
 				568B8CA61DA648FB0011CD61 /* Resources */,
+				E499C150254F7043F40F4381 /* [CP] Embed Pods Frameworks */,
+				151A36B20A185C507E7133EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1491,9 +1510,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 568B8CC21DA648FB0011CD61 /* Build configuration list for PBXNativeTarget "faderjamUITests" */;
 			buildPhases = (
+				05E8214A7441D2DD09A1029D /* [CP] Check Pods Manifest.lock */,
 				568B8CAF1DA648FB0011CD61 /* Sources */,
 				568B8CB01DA648FB0011CD61 /* Frameworks */,
 				568B8CB11DA648FB0011CD61 /* Resources */,
+				283ABAA013E40A9174C1A436 /* [CP] Embed Pods Frameworks */,
+				65B19A8706B505E97DA6FB21 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1986,14 +2008,104 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		35F6D8748100BB06583B6CEC /* Copy Pods Resources */ = {
+		05E8214A7441D2DD09A1029D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		151A36B20A185C507E7133EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-faderjamTests/Pods-faderjamTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B32E59BC02F5C7BDE93D447 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-faderjam/Pods-faderjam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		283ABAA013E40A9174C1A436 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-faderjamUITests/Pods-faderjamUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65B19A8706B505E97DA6FB21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-faderjamUITests/Pods-faderjamUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A62016FD7EAA21B3FD2F4B65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3C482F0E1C864CCFE837B23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2001,34 +2113,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-faderjam/Pods-faderjam-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3B954AAEB69E68A5A8DA1DEA /* Check Pods Manifest.lock */ = {
+		B5DD9314FEFBB92FE7D7B11D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		BB7876467EA792178050D0DE /* Embed Pods Frameworks */ = {
+		E499C150254F7043F40F4381 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-faderjam/Pods-faderjam-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-faderjamTests/Pods-faderjamTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2190,7 +2302,7 @@
 		};
 		568B8CBD1DA648FB0011CD61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E9FA081E437E2FAD071A620 /* Pods-faderjam.debug.xcconfig */;
+			baseConfigurationReference = 4550F26EB176DA550B8DCD8A /* Pods-faderjam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EDH387FRHA;
@@ -2203,7 +2315,7 @@
 		};
 		568B8CBE1DA648FB0011CD61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B67CA6131EDF89A21608ED46 /* Pods-faderjam.release.xcconfig */;
+			baseConfigurationReference = 770E8FD3AA668C0AB530CBD3 /* Pods-faderjam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EDH387FRHA;
@@ -2216,6 +2328,7 @@
 		};
 		568B8CC01DA648FB0011CD61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B4E8144940F143677698487 /* Pods-faderjamTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = EDH387FRHA;
@@ -2229,6 +2342,7 @@
 		};
 		568B8CC11DA648FB0011CD61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7486D500E9CB10B0F8CA8A9 /* Pods-faderjamTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = EDH387FRHA;
@@ -2242,6 +2356,7 @@
 		};
 		568B8CC31DA648FB0011CD61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 491DBCED517146361E222D51 /* Pods-faderjamUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = EDH387FRHA;
 				INFOPLIST_FILE = faderjamUITests/Info.plist;
@@ -2254,6 +2369,7 @@
 		};
 		568B8CC41DA648FB0011CD61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C53F3EFB57FDF49085FA41A4 /* Pods-faderjamUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = EDH387FRHA;
 				INFOPLIST_FILE = faderjamUITests/Info.plist;
