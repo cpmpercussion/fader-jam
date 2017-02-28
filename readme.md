@@ -16,4 +16,4 @@ FaderJam is designed to be as simple as possible, the app only includes one scre
 - Modelling user performances for the automatic modes
 - Exploring generative composition
 
-![FaderJam's UI.](https://raw.githubusercontent.com/cpmpercussion/fader-jam/master/images/microjam-drums.png)
+![FaderJam's UI.](https://raw.githubusercontent.com/cpmpercussion/fader-jam/master/images/faderjam-drums.png)
