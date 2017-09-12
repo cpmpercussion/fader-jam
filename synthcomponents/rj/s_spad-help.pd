@@ -1,15 +1,14 @@
-#N struct 1113-symarray float x array symbols 1113-sym;
-#N struct 1113-sym symbol name float on;
-#N canvas 34 60 877 510 10;
+#N struct 1006-symarray float x array symbols 1006-sym;
+#N struct 1006-sym symbol name float on;
+#N canvas -1629 -69 877 510 10;
 #X declare -path .;
 #X declare -path .;
-#N canvas 215 95 1081 586 detailed_help 0;
+#N canvas -1455 341 1081 586 detailed_help 1;
 #X obj 719 26 declare -path .;
 #X obj 20 321 soundoutput;
 #X msg 186 132 save;
 #X obj 575 9 r \$0-GUI;
 #X obj 21 132 m_majorscale 50;
-#X obj 21 78 metro 500;
 #X obj 21 54 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
 ;
 #X obj 21 211 pack;
@@ -21,8 +20,8 @@
 #X obj 21 297 s \$0-GUI;
 #X text 124 31 add your midi controller mappings here. Format: <ctl-num>
 <method name>;
-#X floatatom 47 144 5 0 0 0 - - -;
-#X floatatom 88 145 5 0 0 0 - - -;
+#X floatatom 47 144 5 0 0 0 - - -, f 5;
+#X floatatom 88 145 5 0 0 0 - - -, f 5;
 #X obj 21 260 list prepend;
 #X text 119 259 swap;
 #X msg 558 66 env1a \, env1d \, env1r \, env1s \, env2a \, env2d \,
@@ -31,7 +30,7 @@ env2r \, env2s \, env3a \, env3d \, env3r \, env3s \, mod1a \, mod1b
 \, mod3c \, mod3d \, osc1a \, osc1b \, osc1c \, osc1d \, osc2a \, osc2b
 \, osc2c \, osc2d \, osc3a \, osc3b \, osc3c \, osc3d \,;
 #X msg 201 222 dump;
-#X symbolatom 37 241 10 0 0 0 - - -;
+#X symbolatom 37 241 10 0 0 0 - - -, f 10;
 #X obj 201 276 print;
 #X obj 201 244 u_dumpfile controls.txt cr;
 #X text 552 32 Control Template - These are the methods \, that s_czz_synth
@@ -63,15 +62,14 @@ accepts. They all expect values in a range of 0-1.;
 #X obj 144 505 s \$0-GUI;
 #X obj 119 241 r \$0-control;
 #X obj 575 528 s \$0-control;
-#X symbolatom 350 271 20 0 0 0 - - -;
+#X symbolatom 350 271 20 0 0 0 - - -, f 20;
 #X obj 452 248 s \$0-GUI;
 #X obj 350 200 nbx 3 20 0 256 0 0 empty empty empty 0 -8 0 16 -260097
--262144 -1 4 256;
+-262144 -1 0 256;
 #X obj 350 177 pgmin 1;
-#X obj 21 154 makenote 127 300;
-#X floatatom 112 62 5 0 0 0 - - -;
+#X floatatom 112 62 5 0 0 0 - - -, f 5;
 #X obj 307 157 hradio 15 1 0 5 empty empty empty 0 -8 0 10 -262144
--1 -1 4;
+-1 -1 0;
 #X msg 144 317 mod3d 0 \, mod3c 0 \, mod3b 0.520079 \, mod3a 0 \, mod2d
 0 \, mod2c 0 \, mod2b 0 \, mod2a 0 \, mod1d 0 \, mod1c 0.284409 \,
 mod1b 0.103622 \, mod1a 0.724882 \, osc3d 0 \, osc3c 0 \, osc3b 0 \,
@@ -81,7 +79,7 @@ env3s 0 \, env3d 0 \, env3a 0 \, env2r 0.0244882 \, env2s 0.992992
 \, env2d 0.0708661 \, env2a 0.00787402 \, env1r 0.00952756 \, env1s
 0.889764 \, env1d 0.111024 \, env1a 0.0173228 \,;
 #X obj 575 56 g_synthcontrol;
-#N canvas 0 0 1152 704 spad_presets 0;
+#N canvas 0 22 1152 704 spad_presets 0;
 #X obj 91 26 inlet;
 #X obj 134 647 outlet name;
 #X obj 118 611 symbol;
@@ -183,35 +181,37 @@ osc1d 0.646142 \, osc1c 0.974882 \, osc1b 0.244094 \, osc1a 0.228346
 #X restore 350 227 pd spad_presets;
 #X obj 21 105 random 10;
 #X obj 21 241 s_spad \$0-TAG;
-#X connect 2 0 12 0;
-#X connect 3 0 25 0;
-#X connect 4 0 21 0;
-#X connect 5 0 27 0;
-#X connect 6 0 5 0;
-#X connect 7 0 28 0;
-#X connect 9 0 7 0;
-#X connect 9 1 7 1;
-#X connect 11 0 24 0;
-#X connect 12 0 28 1;
-#X connect 12 1 11 1;
-#X connect 13 0 2 0;
-#X connect 15 0 28 1;
-#X connect 19 0 26 0;
-#X connect 20 0 19 0;
-#X connect 21 0 7 0;
-#X connect 21 1 7 1;
-#X connect 22 0 27 1;
-#X connect 23 0 19 0;
-#X connect 24 0 14 0;
-#X connect 25 0 16 0;
-#X connect 26 0 17 0;
-#X connect 26 1 18 0;
-#X connect 27 0 4 0;
-#X connect 28 0 1 0;
-#X connect 28 0 1 1;
-#X connect 28 1 11 0;
+#X obj 21 154 makenote 127 2000;
+#X obj 21 78 metro 3000;
+#X connect 2 0 11 0;
+#X connect 3 0 23 0;
+#X connect 4 0 27 0;
+#X connect 5 0 28 0;
+#X connect 6 0 26 0;
+#X connect 8 0 6 0;
+#X connect 8 1 6 1;
+#X connect 10 0 22 0;
+#X connect 11 0 26 1;
+#X connect 11 1 10 1;
+#X connect 12 0 2 0;
+#X connect 14 0 26 1;
+#X connect 18 0 24 0;
+#X connect 19 0 18 0;
+#X connect 20 0 25 1;
+#X connect 21 0 18 0;
+#X connect 22 0 13 0;
+#X connect 23 0 15 0;
+#X connect 24 0 16 0;
+#X connect 24 1 17 0;
+#X connect 25 0 4 0;
+#X connect 26 0 1 0;
+#X connect 26 0 1 1;
+#X connect 26 1 10 0;
+#X connect 27 0 6 0;
+#X connect 27 1 6 1;
+#X connect 28 0 25 0;
 #X restore 565 253 pd detailed_help;
-#N canvas 175 0 827 680 REFERENCE 0;
+#N canvas 175 22 827 680 REFERENCE 0;
 #X text 114 174 Argument 0: name for state saving (required);
 #X text 114 214 Inlet 0: pitch/velocity pairs.;
 #X text 114 357 Outlet 0: synth audio signal.;
