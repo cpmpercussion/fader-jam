@@ -1,5 +1,5 @@
 PODS:
-  - libpd (0.10.0)
+  - libpd (0.11.0)
 
 DEPENDENCIES:
   - libpd (from `https://github.com/libpd/libpd`)
@@ -11,13 +11,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   libpd:
-    :commit: 1b3df422ba456001ce0a2233d201811cd01468a9
+    :commit: ba51dbc52ae247ec2878164e2aa427e9d02e0211
     :git: https://github.com/libpd/libpd
     :submodules: true
 
 SPEC CHECKSUMS:
-  libpd: c4f8ec7be74d223200052f0736ae02e56b12b9e9
+  libpd: 92e99cda31e27261cc63c7508a57283561999cb8
 
 PODFILE CHECKSUM: 6046f01379f9e9586c40768899a33d325ec6273e
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.7.5

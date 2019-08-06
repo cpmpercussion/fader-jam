@@ -5,10 +5,11 @@
 /*  send~, delread~, throw~, catch~ */
 
 #include "m_pd.h"
+#include <string.h>
 extern int ugen_getsortno(void);
 
 #define DEFDELVS 64             /* LATER get this from canvas at DSP time */
-static int delread_zero = 0;    /* four bytes of zero for delread~, vd~ */
+static const int delread_zero = 0;    /* four bytes of zero for delread~, vd~*/
 
 /* ----------------------------- delwrite~ ----------------------------- */
 static t_class *sigdelwrite_class;
@@ -50,6 +51,13 @@ static void sigdelwrite_updatesr(t_sigdelwrite *x, t_float sr) /* added by Mathi
         x->x_cspace.c_phase = XTRASAMPS;
     }
 }
+
+static void sigdelwrite_clear (t_sigdelwrite *x) /* added by Orm Finnendahl */
+{
+  if (x->x_cspace.c_n > 0)
+    memset(x->x_cspace.c_vec, 0, sizeof(t_sample)*(x->x_cspace.c_n + XTRASAMPS));
+}
+
 
     /* routine to check that all delwrites/delreads/vds have same vecsize */
 static void sigdelwrite_checkvecsize(t_sigdelwrite *x, int vecsize)
@@ -136,6 +144,8 @@ static void sigdelwrite_setup(void)
     CLASS_MAINSIGNALIN(sigdelwrite_class, t_sigdelwrite, x_f);
     class_addmethod(sigdelwrite_class, (t_method)sigdelwrite_dsp,
         gensym("dsp"), A_CANT, 0);
+    class_addmethod(sigdelwrite_class, (t_method)sigdelwrite_clear,
+                    gensym("clear"), 0);
 }
 
 /* ----------------------------- delread~ ----------------------------- */
@@ -168,13 +178,11 @@ static void *sigdelread_new(t_symbol *s, t_floatarg f)
 
 static void sigdelread_float(t_sigdelread *x, t_float f)
 {
-    int samps;
     t_sigdelwrite *delwriter =
         (t_sigdelwrite *)pd_findbyclass(x->x_sym, sigdelwrite_class);
     x->x_deltime = f;
     if (delwriter)
     {
-        int delsize = delwriter->x_cspace.c_n;
         x->x_delsamps = (int)(0.5 + x->x_sr * x->x_deltime)
             + x->x_n - x->x_zerodel;
         if (x->x_delsamps < x->x_n) x->x_delsamps = x->x_n;
@@ -217,9 +225,12 @@ static void sigdelread_dsp(t_sigdelread *x, t_signal **sp)
         sigdelread_float(x, x->x_deltime);
         dsp_add(sigdelread_perform, 4,
             sp[0]->s_vec, &delwriter->x_cspace, &x->x_delsamps, sp[0]->s_n);
+        /* check block size - but only if delwriter has been initialized */
+        if (delwriter->x_cspace.c_n > 0 && sp[0]->s_n > delwriter->x_cspace.c_n)
+            pd_error(x, "delread~ %s: blocksize larger than delwrite~ buffer", x->x_sym->s_name);
     }
     else if (*x->x_sym->s_name)
-        error("delread~: %s: no such delwrite~",x->x_sym->s_name);
+        pd_error(x, "delread~: %s: no such delwrite~",x->x_sym->s_name);
 }
 
 static void sigdelread_setup(void)
@@ -269,6 +280,12 @@ static t_int *sigvd_perform(t_int *w)
     t_sample fn = n-1;
     t_sample *vp = ctl->c_vec, *bp, *wp = vp + ctl->c_phase;
     t_sample zerodel = x->x_zerodel;
+    if (limit < 0) /* blocksize is larger than delread~ buffer size */
+    {
+        while (n--)
+            *out++ = 0;
+        return (w+6);
+    }
     while (n--)
     {
         t_sample delsamps = x->x_sr * *in++ - zerodel, frac;
@@ -283,7 +300,7 @@ static t_int *sigvd_perform(t_int *w)
         idelsamps = delsamps;
         frac = delsamps - (t_sample)idelsamps;
         bp = wp - idelsamps;
-        if (bp < vp + 4) bp += nsamps;
+        if (bp < vp + XTRASAMPS) bp += nsamps;
         d = bp[-3];
         c = bp[-2];
         b = bp[-1];
@@ -311,9 +328,12 @@ static void sigvd_dsp(t_sigvd *x, t_signal **sp)
         dsp_add(sigvd_perform, 5,
             sp[0]->s_vec, sp[1]->s_vec,
                 &delwriter->x_cspace, x, sp[0]->s_n);
+        /* check block size - but only if delwriter has been initialized */
+        if (delwriter->x_cspace.c_n > 0 && sp[0]->s_n > delwriter->x_cspace.c_n)
+            pd_error(x, "vd~ %s: blocksize larger than delwrite~ buffer", x->x_sym->s_name);
     }
     else if (*x->x_sym->s_name)
-        error("vd~: %s: no such delwrite~",x->x_sym->s_name);
+        pd_error(x, "vd~: %s: no such delwrite~",x->x_sym->s_name);
 }
 
 static void sigvd_setup(void)

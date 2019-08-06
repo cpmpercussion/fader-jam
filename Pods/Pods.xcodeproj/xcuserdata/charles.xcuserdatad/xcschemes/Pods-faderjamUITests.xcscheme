@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '98939AA328733746627597629A82C3AB'
-               BlueprintName = 'Pods-faderjamUITests'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-faderjamUITests.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EBC23EF8AC6FA50FF87CE5D00E765713"
+               BuildableName = "libPods-faderjamUITests.a"
+               BlueprintName = "Pods-faderjamUITests"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
